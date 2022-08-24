@@ -21,7 +21,7 @@ class PenggajianResource extends JsonResource
             'gaji_pokok' => $this->karyawan->gaji_pokok,
             'bonus_gaji' => $this->bonus,
             'potongan_gaji' => $this->potongan,
-            'total_gaji' => $this->karyawan->gaji_pokok + $this->bonus - $this->potongan,
+            'total_gaji' => $this->total,
             'tanggal' => $this->tanggal,
             'keterangan' => $this->keterangan,
         ];

@@ -13,7 +13,3 @@ Route::resource('karyawan', KaryawanController::class)->except([
 Route::resource('penggajian', PenggajianController::class)->except([
     'create', 'edit'
 ]);
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
